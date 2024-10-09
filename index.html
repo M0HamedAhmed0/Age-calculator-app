@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!----------------- Google Fonts Links ---------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!----------------- Favicons image ---------------->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <!-----------------  Font Awesome File ---------------->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!----------------- Bootstrap CSS File ---------------->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!----------------- Main CSS File ---------------->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Age calculator app</title>
+</head>
+
+<body>
+
+
+  <!--------------- Start of Main sections --------------->
+
+
+  <main class="vh-100 position-relative overflow-hidden">
+    <div id="particles-js" class="position-absolute h-100 w-100"></div>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="inner bg-white p-4 col-10 col-lg-6 overflow-hidden position-relative">
+        <form class="d-flex">
+          <div class="day">
+            <label class="form-label" for="day">Day</label>
+            <input class="form-control w-75" type="number" id="day" name="day" required placeholder="DD">
+          </div>
+
+          <div class="month">
+            <label class="form-label" for="month">Month</label>
+            <input class="form-control w-75" type="number" id="month" name="month" required placeholder="MM">
+          </div>
+
+          <div class="years">
+            <label class="form-label" for="years">Years</label>
+            <input class="form-control w-75" type="number" id="years" name="years" required placeholder="YYYY">
+          </div>
+        </form>
+        <p id="hidden" class="alert alert-danger d-none">Please Enter Your Date of Birth</p>
+        <div class="reset position-absolute">
+          <span><a href="" id="click"><i class="fa-solid fa-power-off"></i></a></span>
+        </div>
+        <div class="user-age fs-1 text-ital">
+          <div class="user-years">
+            <span class="purple" id="userYears">--</span>
+            <span>Years</span>
+          </div>
+          <div class="user-months">
+            <span class="purple" id="userMonths">--</span>
+            <span>Months</span>
+          </div>
+          <div class="user-days">
+            <span class="purple" id="userDays">--</span>
+            <span>Days</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--------------- End of Main sections --------------->
+
+
+  <!--------------- Particles Js Script --------------->
+  <script src="js/particles.min.js"></script>
+  <!--------------- Script File JS --------------->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
