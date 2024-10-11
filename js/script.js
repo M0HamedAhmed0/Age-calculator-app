@@ -7,6 +7,7 @@ let inputDay = document.querySelector("#day");
 let inputMonth = document.querySelector("#month");
 let inputYear = document.querySelector("#years");
 let click = document.querySelector("#click");
+let restart = document.querySelector("#restart");
 
 function getAge() {
     let days = inputDay.value;
@@ -39,4 +40,15 @@ click.addEventListener("click", function (e) {
         document.querySelector("#hidden").classList.add("d-none");
         getAge();
     }
+});
+
+restart.addEventListener("click", function (e) {
+    e.preventDefault();
+    inputDay.value = "";
+    inputMonth.value = "";
+    inputYear.value = "";
+    document.querySelector("#hidden").classList.add("d-none");
+    document.getElementById("userYears").innerHTML = "-- ";
+    document.getElementById("userMonths").innerHTML = "-- ";
+    document.getElementById("userDays").innerHTML = "-- ";
 });

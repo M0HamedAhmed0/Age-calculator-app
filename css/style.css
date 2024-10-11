@@ -31,12 +31,17 @@ form {
     box-shadow: 0px 0px 10px hsl(0, 1%, 44%);
 }
 
-.reset {
+
+.power {
     right: 15px;
     transform: translate(3px, -30%);
 }
 
-.reset span {
+.chick {
+    transform: translate(3px, 100%);
+}
+
+.power span {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -47,12 +52,12 @@ form {
     transition: all 0.3s;
 }
 
-.reset span:hover {
+.power span:hover {
     background-color: hsl(0, 0%, 8%);
     color: white;
 }
 
-.reset i {
+.power i {
     color: white;
     font-size: 20px;
 }
